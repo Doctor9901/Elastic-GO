@@ -30,7 +30,7 @@ if ($tempo_segundos <= 0) {
         <div class="text-center bg-white p-5 rounded shadow" style="max-width: 400px;">
             <h1 class="text-warning mb-4">Quase finalizado!</h1>
             <p class="fs-5">Você não completou o exercício, mas está quase lá. Continue tentando!</p>
-            <a href="exercicio1.php" class="btn btn-primary mt-3">Voltar e tentar novamente</a>
+            <a href="beta1.php" class="btn btn-primary mt-3">Voltar e tentar novamente</a>
         </div>
     </body>
     </html>

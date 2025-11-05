@@ -39,6 +39,7 @@
         <p class="lead text-white">Você acessou o painel do aluno.</p>
         <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
           <a href="exercicios.html" class="btn btn-success btn-lg shadow px-5"> <small>COMEÇAR</small></a>
+          <a href="exercicio_video.php" class="btn btn-primary btn-lg shadow px-5">Exercícios Feitos</a>
           <a href="sair.php" class="btn btn-outline-danger btn-lg shadow px-5">Sair</a>
         </div>
       </div>  
