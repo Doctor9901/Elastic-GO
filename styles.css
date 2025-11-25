@@ -58,10 +58,10 @@ html, body {
  .form-container {
    max-width: 350px;
    padding: 1rem;
-   background: rgba(255, 255, 255, 0.5); /* Fundo branco com 50% de opacidade */
+   background: rgb(0, 0, 0); /* Fundo branco com 50% de opacidade */
    border-radius: 10px; /* Bordas arredondadas */
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
-   color: #000; /* Define a cor do texto como preto */
+   color: #fffdfd; /* Define a cor do texto como preto */
  }
  
  /* Título estilizado */
@@ -91,3 +91,15 @@ html, body {
    font-size: 0.9rem; /* Reduz o tamanho da fonte */
    border-radius: 25px; /* Mantém as bordas arredondadas */
  }
+ /* 🔷 Título com LOGO ao lado */
+.elastic-go-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;              /* Espaço entre imagem e texto */
+    font-size: 2.5rem;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}

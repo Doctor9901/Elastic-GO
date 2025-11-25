@@ -48,6 +48,7 @@ if (isset($_POST['cadastrar'])) {
   <title>Cadastro - Elastic GO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="./imagens/elastic.jpeg">
 </head>
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
   <main class="w-100 m-auto form-container">

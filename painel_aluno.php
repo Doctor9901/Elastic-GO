@@ -7,13 +7,14 @@
   <title>Área do Aluno - Elastic GO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./imagens/elasticos.jpeg">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="painel_aluno.php">Elastic GO</a>
+      <a class="navbar-brand fw-bold text-primary" href="painel_aluno.php"><img src="imagens/elasticos.jpeg" style="width: 100px; height: 55px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,7 +40,7 @@
         <p class="lead text-white">Você acessou o painel do aluno.</p>
         <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
           <a href="exercicios.html" class="btn btn-success btn-lg shadow px-5"> <small>COMEÇAR</small></a>
-          <a href="exercicio_video.php" class="btn btn-primary btn-lg shadow px-5">Exercícios Feitos</a>
+          <a href="painel_de_video.php" class="btn btn-primary btn-lg shadow px-5">Exercícios Feitos</a>
           <a href="sair.php" class="btn btn-outline-danger btn-lg shadow px-5">Sair</a>
         </div>
       </div>  
