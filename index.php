@@ -1,27 +1,53 @@
-<?php session_start(); ?>
+<?php session_start(); ?>  
+<!-- Inicia a sessão PHP (necessário para usar $_SESSION e mostrar erros) -->
+
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="dark">
+<html lang="pt-br" data-bs-theme="dark">  
+<!-- Define o idioma da página e ativa o tema escuro do Bootstrap -->
+
 <head>
     <meta charset="UTF-8" />
+    <!-- Define o padrão de caracteres (suporta acentos corretamente) -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Torna a página responsiva em celulares -->
+
     <title>Elastic GO - Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Título da aba do navegador -->
+
+    <!-- Importação do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Ícone da aba -->
+    <link rel="icon" type="image/png" href="./imagens/elasticos.jpeg" />
 </head>
+
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <!-- Centraliza tudo verticalmente com fundo padrão do Bootstrap -->
+
     <main class="w-100 m-auto form-container">
+        <!-- Container central do formulário -->
+
         <form method="post" action="login.php">
+            <!-- Envia os dados para login.php via POST -->
 
-            <!-- Título -->
-            <h1 class="h1 mb-3 fw-bold text-center elastic-go-title">ELASTIC GO</h1>
-            <h1 class="h3 mb-3 fw-normal">Por favor, faça login</h2>
+            <!-- Logo -->
+            <h1 class="elastic-go-title">
+                <img src="imagens/elastic.jpeg" style="width: 320px; height: 300px;">
+            </h1>
 
-            <!-- Mensagem de erro (se houver) -->
+            <h2 class="h3 mb-3 fw-normal">Por favor, faça login</h2>
+
+            <!-- Mensagem de erro -->
             <?php if (isset($_SESSION['erro'])): ?>
                 <div class="alert alert-danger text-center">
                     <?= $_SESSION['erro']; unset($_SESSION['erro']); ?>
                 </div>
             <?php endif; ?>
+            <!-- Se houver erro salvo na sessão, ele é exibido aqui -->
 
             <!-- Campo de e-mail -->
             <div class="form-floating mb-3">
@@ -35,13 +61,13 @@
                 <label for="floatingInputPassword">Senha</label>
             </div>
 
-            <!-- Checkbox lembrar-me -->
+            <!-- Checkbox lembrar-me (não salva de verdade por enquanto) -->
             <div class="form-check text-start mb-3">
                 <input type="checkbox" class="form-check-input" id="rememberMeCheck">
                 <label class="form-check-label" for="rememberMeCheck">Lembrar-me</label>
             </div>
 
-            <!-- Botão Entrar -->
+            <!-- Botão de login -->
             <button class="btn btn-primary w-100 py-2" type="submit">Entrar</button>
 
             <!-- Link para cadastro -->
@@ -52,7 +78,7 @@
         </form>
     </main>
 
-    <!-- Bootstrap JS -->
+    <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
