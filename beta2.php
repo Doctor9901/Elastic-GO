@@ -408,8 +408,7 @@ iniciarBtn.onclick = async () => {
   registrarBtn.disabled = true;
   resultado.textContent = "🏋️ Exercício iniciado...";
 
-  falar("Bem-Vindo ao exercício, antes de começar siga as orientações para ter um ótimo desempenho, primeiro ajuste a câmera para aparecer a cabeça até o joelho. Dois fique visivel de frente para câmera com uma distância de 2 a 4 passos. Você tem 10 segundos para se preparar, contando. um. dois. três. quatro. cinco. seis. sete. oito. nove. dez. Iniciando caminhada. Mova-se no lugar devagar e mantenha a postura como na demostração.");
-  analisarPostura();
+  iniciarCronometro();
 
   mediaRecorder = new MediaRecorder(stream, { mimeType: "video/webm" });
   chunks = [];
